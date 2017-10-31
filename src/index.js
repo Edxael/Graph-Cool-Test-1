@@ -14,4 +14,4 @@ const ApolloWrap = () => {
   )
 }
 
-ReactDOM.render(<ApolloWrap/>, document.getElementById("root"))
+ReactDOM.render( <ApolloWrap/> , document.getElementById("root"))
