@@ -18,8 +18,8 @@ const AddTeam = (props) => {
       <h1>Add Team</h1>
       <button onClick={e => props.mutate({
         variables: {
-          name: 'Zaraperos',
-          location: 'MidNortEast, FL'
+          name: 'Eagles',
+          location: 'Mountain, MT'
         }
       })}>Add Zaraperos</button>
     </div>

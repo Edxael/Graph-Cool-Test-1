@@ -6,6 +6,4 @@ const client = new ApolloClient({
   })
 })
 
-export {
-  client
-}
+export { client }

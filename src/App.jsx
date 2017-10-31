@@ -14,11 +14,11 @@ class MyApp extends Component {
 
     return(
       <div>
+
         <h1>Teams</h1>
+
         {!loading && allTeams.map( (team) => { return(
-          <div key={team.id}>
-            {team.id}
-          </div>
+          <div key={team.id}> {team.name} </div>
         ) } )}
 
       <AddTeam />
@@ -28,16 +28,6 @@ class MyApp extends Component {
   }
 }
 
-
-const MUTATION = gql`
-  mutation createTeam($name: String!, $location: String!) {
-    createTeam(name: $name, location: $location) {
-      id
-      name
-      location
-    }
-  }
-`
 
 const QUERY = gql`
   query {
